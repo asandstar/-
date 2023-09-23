@@ -52,7 +52,7 @@ https://leetcode.cn/leetbook/read/array-and-string/xkhi75/
 
 看了学习册里的题解之后发现我的问题是，没有考虑列表为空的情况，此时k无效。然后翻到主站的题解……https://leetcode.cn/problems/sliding-window-maximum/solutions/543426/hua-dong-chuang-kou-zui-da-zhi-by-leetco-ki6m/ 我是傻逼！学了和没学过一样，其实就是没学过，之前看的那些科普书有点概念只是哄哄小孩子的。「最大值」可以用优先队列（堆）。可以帮助我们实时维护一系列元素中的最大值。
 
-
+难道在别人的项目里提交不算数吗？
 
 
 
