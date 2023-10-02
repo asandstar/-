@@ -50,9 +50,11 @@ https://leetcode.cn/leetbook/read/array-and-string/xkhi75/
 
 2023-09-14：【深刻反思一下自己表面功夫太多。找别人方法有时候不如先蛮干然后再自己优化总结方法，别人的方法永远是别人的，自己总结的才更可能是自己的。】剑指offer59 滑动窗口最大值。自己想的思路一：python 列表切片然后用find函数找最大值，再用循环依次滑动列表。C++就新建一个长度为3的数组，然后新建一个函数找三个数中的最大值，一般是两两比较，max_1=a>b?a:b, max_2=max_1>c?max_1:c这种。再对每个滑动的数组里的元素调用里面的函数。最后注意滑动时候的边界条件吧，可能这里就是具体实现上一些取等的细节问题。先获取长度，然后头从0到len(list)-3遍历每个list或array。
 
-看了学习册里的题解之后发现我的问题是，没有考虑列表为空的情况，此时k无效。然后翻到主站的题解……https://leetcode.cn/problems/sliding-window-maximum/solutions/543426/hua-dong-chuang-kou-zui-da-zhi-by-leetco-ki6m/ 我是傻逼！学了和没学过一样，其实就是没学过，之前看的那些科普书有点概念只是哄哄小孩子的。「最大值」可以用优先队列（堆）。可以帮助我们实时维护一系列元素中的最大值。
+看了学习册里的题解之后发现我的问题是，没有考虑列表为空的情况，此时k无效。然后翻到主站的题解……https://leetcode.cn/problems/sliding-window-maximum/solutions/543426/hua-dong-chuang-kou-zui-da-zhi-by-leetco-ki6m/ 学了和没学过一样，其实就是没学过，之前看的那些科普书有点概念只是哄哄小孩子的。「最大值」可以用优先队列（堆）。可以帮助我们实时维护一系列元素中的最大值。
 
-难道在别人的项目里提交不算数吗？
+https://ojeveryday.github.io/AlgoWiki/#/BinarySearch/README?id=%e4%ba%8c%e5%88%86%e6%9f%a5%e6%89%be%e6%a8%a1%e6%9d%bf%e4%ba%8c%ef%bc%88%e6%8e%a8%e8%8d%90%ef%bc%89
+
+https://blog.csdn.net/fuxuemingzhu/article/details/101900729
 
 
 
