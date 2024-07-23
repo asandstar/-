@@ -1,40 +1,7 @@
-## 数据结构24spring
+## Hello algo
+[Hello 算法](https://www.hello-algo.com/chapter_hello_algo/)
+Trying to construct a map about algorithm
 
-### 1 绪论
-
-### 2 线性表，链表（Linked List）
-
-### 3 栈（Stack）和队列（Queue）
-
-### 4  串
-
-### 5 KMP
-
-### 6 递归
-
-### 7 数组（Array）和广义表（略）
-
-### 8 树（Tree）
-
-### 9 图（Graph）
-
-
-## 数据结构
-### 数组（Array）
-
-### 队列（Queue）
-
-### 链表（Linked List）
-
-### 栈（Stack）
-
-### 树（Tree）
-
-### 散列表（Hash）
-
-### 堆（Heap）
-
-### 图（Graph）
 
 
 ## oi wiki
@@ -78,7 +45,7 @@ Prim算法
 Kruskal算法
 Dijkstra算法
 
-算法分类是自创的，而且因为扁平化了一些大类，就是把大类拆成小类
+算法分类是自创的，而且因为扁平化了一些大类，把大类拆成小类
 第4-10章：
 蛮力法
 减治法
@@ -93,7 +60,6 @@ Dijkstra算法
 
 ## 《数据结构解题策略》复旦大学吴永辉
 ### 线性表的解题策略
-
 
 
 

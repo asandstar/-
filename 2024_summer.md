@@ -13,30 +13,49 @@
 
 ### Time Complexity of Common Operation
 #### Array
-| Operation                  | Time Complexity |
-| -------------------------- | --------------- |
-| 在结尾添加或删除元素       | O(1)            |
-| 访问或修改任意索引处的元素 | O(1)            |
-| 求给定前缀和的子数组的和   | O(1)            |
-| 从任意索引中添加或删除元素 | O(n)            |
-| 检查元素是否存在           | O(n)            |
-| 构建前缀和                 | O(n)            |
+n=arr.length
+| Operation                  | Time Complexity                      |
+| -------------------------- | ------------------------------------ |
+| 在结尾添加或删除元素       | O(1)                                 |
+| 访问或修改任意索引处的元素 | O(1)                                 |
+| 求给定前缀和的子数组的和   | O(1)                                 |
+| 从任意索引中添加或删除元素 | O(n)                                 |
+| 检查元素是否存在           | O(n)                                 |
+| 构建前缀和                 | O(n)                                 |
+| 双指针                     | O(n·k),k为每次迭代的工作，如滑动窗口 |
+
+#### String
+n=s.length
+| Operation                                | Time Complexity |
+| ---------------------------------------- | --------------- |
+| 任意索引处的访问元素                     | O(1)            |
+| 添加或删除字符                           | O(n)            |
+| 通过连接数组、stringbuilder 等构建字符串 | O(n)            |
+| 创建子字符串                             | O(m)            |
+| 两个字符串之间的连接                     | O(n+m)          |
+| 双指针                                   | O(n·k)          |
 
 #### Linked List
-| Operation | Time Complexity |
-| --------- | --------------- |
-| Access    | O(n)            |
-| Search    | O(n)            |
-| Insert    | O(1)            |
-| Delete    | O(1)            |
+n=链表中节点数
+| Operation                                  | Time Complexity |
+| ------------------------------------------ | --------------- |
+| 给定指针位置的后面添加或删除元素           | O(1)            |
+| 如果是双向链表，给定指针位置添加或删除元素 | O(1)            |
+| 在没有指针的任意位置添加或删除元素         | O(n)            |
+| 无指针任意位置的访问元素                   | O(n)            |
+| 检查元素是否存在                           | O(n)            |
+| 使用快慢指针或哈希映射完成一次遍历         | O(1)            |
+| 在位置 i 和 j 之间反转                     | O(j-i)          |
 
 #### Hash Table
-| Operation | Time Complexity |
-| --------- | --------------- |
-| Access    | O(1)            |
-| Search    | O(1)            |
-| Insert    | O(1)            |
-| Delete    | O(1)            |
+n=dic.length
+| Operation                 | Time Complexity |
+| ------------------------- | --------------- |
+| 添加或删除键值对          | O(1)            |
+| 检查 key 是否存在         | O(1)            |
+| 访问或修改与 key 相关的值 | O(1)            |
+| 检查值是否存在            | O(n)            |
+| 遍历所有键值              | O(n)            |
 
 #### Binary Search Tree
 | Operation | Time Complexity |
@@ -80,3 +99,40 @@
 | Divide and Conquer  | O(n)             |
 | Greedy              | O(1)             |
 | Backtracking        | O(n)             |
+
+
+## Template
+双指针:同向指针、相向指针
+```cpp
+int fn(vector<int>& arr1, vector<int>& arr2){
+    int i = 0, j = 0, ans = 0;
+
+    while(i < arr1.size() && j < arr2.size()){
+        //add necessary code
+        if(CONDITION){
+            i++;
+        }else{
+            j++;
+        }
+    }
+
+    while(i < arr1.size()){
+        //add necessary code
+        i++;
+    }
+
+    while(j < arr2.size()){
+        //add necessary code
+        j++;
+    }
+
+    return ans;
+}
+
+```
+
+
+```java
+public int fn
+
+```
