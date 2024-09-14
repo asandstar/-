@@ -101,38 +101,105 @@ n=dic.length
 | Backtracking        | O(n)             |
 
 
-## Template
-双指针:同向指针、相向指针
-```cpp
-int fn(vector<int>& arr1, vector<int>& arr2){
-    int i = 0, j = 0, ans = 0;
+以下是一个符合要求的 Markdown 文档：
 
-    while(i < arr1.size() && j < arr2.size()){
-        //add necessary code
-        if(CONDITION){
-            i++;
-        }else{
-            j++;
-        }
-    }
+# Big - O Complexity Chart
+| Big O Explanation | Name         | Example                                                                            |
+| ----------------- | ------------ | ---------------------------------------------------------------------------------- |
+| O(1)              | Constant     | Finding an element by array subscript                                              |
+| O(log n)          | Logarithmic  | Binary search in a sorted array                                                    |
+| O(n)              | Linear       | Searching for an element in an unsorted array                                      |
+| O(n log n)        | Log - linear | Merge sort, Heap sort                                                              |
+| O(n²)             | Quadratic    | Selection sort, Insertion sort, Bubble sort                                        |
+| O(n³)             | Cubic        | (High complexity, e.g., nested loops with three levels in some complex algorithms) |
+| O(2ⁿ)             | Exponential  | Finding all subsets of a list                                                      |
+| O(n!)             | Factorial    | Finding all permutations of a list                                                 |
 
-    while(i < arr1.size()){
-        //add necessary code
-        i++;
-    }
+## Time Complexity of Common Operation
+### Array
+Let $n = arr.length$
+| Operation                                                  | Time Complexity                                                                                     |
+| ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Adding or deleting an element at the end                   | O(1)                                                                                                |
+| Accessing or modifying an element at any index             | O(1)                                                                                                |
+| Calculating the sum of sub - arrays for a given prefix sum | O(1)                                                                                                |
+| Adding or deleting an element from any index               | O(n)                                                                                                |
+| Checking if an element exists                              | O(n)                                                                                                |
+| Building the prefix sum                                    | O(n)                                                                                                |
+| Two - pointer approach                                     | $O(n \cdot k)$, where $k$ is the work done at each iteration (e.g., in a sliding - window scenario) |
 
-    while(j < arr2.size()){
-        //add necessary code
-        j++;
-    }
+### String
+Let $n = s.length$
+| Operation                                                      | Time Complexity                                 |
+| -------------------------------------------------------------- | ----------------------------------------------- |
+| Accessing an element at any index                              | O(1)                                            |
+| Adding or deleting a character                                 | O(n)                                            |
+| Building a string by concatenating arrays, StringBuilder, etc. | O(n)                                            |
+| Creating a substring                                           | O(m) (where $m$ is the length of the substring) |
+| Concatenating two strings                                      | O(n + m)                                        |
+| Two - pointer approach                                         | $O(n \cdot k)$                                  |
 
-    return ans;
-}
+### Linked List
+Let $n$ be the number of nodes in the linked list
+| Operation                                                                                  | Time Complexity |
+| ------------------------------------------------------------------------------------------ | --------------- |
+| Adding or deleting an element after a given pointer position                               | O(1)            |
+| If it is a doubly - linked list, adding or deleting an element at a given pointer position | O(1)            |
+| Adding or deleting an element at any position without a pointer                            | O(n)            |
+| Accessing an element at any position without a pointer                                     | O(n)            |
+| Checking if an element exists                                                              | O(n)            |
+| Completing one traversal using fast - slow pointers or hash mapping                        | O(n)            |
+| Reversing between positions $i$ and $j$                                                    | O(j - i)        |
 
-```
+### Hash Table
+Let $n = dic.length$
+| Operation                                         | Time Complexity |
+| ------------------------------------------------- | --------------- |
+| Adding or deleting a key - value pair             | O(1)            |
+| Checking if a key exists                          | O(1)            |
+| Accessing or modifying the value related to a key | O(1)            |
+| Checking if a value exists                        | O(n)            |
+| Traversing all key - value pairs                  | O(n)            |
 
+### Binary Search Tree
+| Operation | Time Complexity |
+| --------- | --------------- |
+| Access    | O(log n)        |
+| Search    | O(log n)        |
+| Insert    | O(log n)        |
+| Delete    | O(log n)        |
 
-```java
-public int fn
+### Heap
+| Operation | Time Complexity |
+| --------- | --------------- |
+| Access    | O(1)            |
+| Search    | O(n)            |
+| Insert    | O(log n)        |
+| Delete    | O(log n)        |
 
-```
+### Graph
+| Operation | Time Complexity |
+| --------- | --------------- |
+| Access    | O(V + E)        |
+| Search    | O(V + E)        |
+| Insert    | O(1)            |
+| Delete    | O(V + E)        |
+
+## Space Complexity of Common Data Structures
+| Data Structure     | Space Complexity |
+| ------------------ | ---------------- |
+| Array              | O(n)             |
+| Linked List        | O(n)             |
+| Hash Table         | O(n)             |
+| Binary Search Tree | O(n)             |
+| Heap               | O(n)             |
+| Graph              | O(V + E)         |
+
+## Space Complexity of Common Algorithm
+| Algorithm           | Space Complexity |
+| ------------------- | ---------------- |
+| Recursion           | O(n)             |
+| Dynamic Programming | O(n)             |
+| Divide and Conquer  | O(n)             |
+| Greedy              | O(1)             |
+| Backtracking        | O(n)             |
